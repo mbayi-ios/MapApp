@@ -1,4 +1,7 @@
 # MapApp
+- Using swiftUI and custom Data Model 
+- Using MVVM Architecture 
+- Using MapKit and Custom Map Annotation Pins 
 
 |screenshots| screenshots| 
 | ---- | ------ |
