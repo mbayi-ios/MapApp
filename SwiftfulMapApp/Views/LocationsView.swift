@@ -18,7 +18,7 @@ class LocationViewModel: ObservableObject {
 
 struct LocationsView: View {
 
-    @StateObject private var vm = LocationViewModel()
+    @EnvironmentObject private var vm: LocationViewModel
 
     var body: some View {
         List {
