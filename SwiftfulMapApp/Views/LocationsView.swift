@@ -37,19 +37,26 @@ struct LocationsView_Previews: PreviewProvider {
 extension LocationsView {
     private var header: some View {
         VStack {
-            Text(vm.mapLocation.name + ", " +  vm.mapLocation.cityName)
-                .font(.title2)
-                .fontWeight(.black)
-                .foregroundColor(.primary)
-                .frame(height: 55)
-                .frame(maxWidth: .infinity)
-                .overlay(alignment: .leading) {
-                    Image(systemName: "arrow.down")
-                        .font(.headline)
-                        .foregroundColor(.primary)
-                        .padding()
 
-                }
+            Button(action: vm.toggleLocationsList) {
+                Text(vm.mapLocation.name + ", " +  vm.mapLocation.cityName)
+                    .font(.title2)
+                    .fontWeight(.black)
+                    .foregroundColor(.primary)
+                    .frame(height: 55)
+                    .frame(maxWidth: .infinity)
+                    .overlay(alignment: .leading) {
+                        Image(systemName: "arrow.down")
+                            .font(.headline)
+                            .foregroundColor(.primary)
+                            .padding()
+                            .rotationEffect(Angle(degrees: vm.showLocationsList ? 180 : 0))
+                    }
+
+            }
+            if vm.showLocationsList {
+                LocationsListView()
+            }
 
 
         }

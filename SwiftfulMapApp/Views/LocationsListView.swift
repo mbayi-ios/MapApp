@@ -13,8 +13,11 @@ struct LocationsListView: View {
         List {
             ForEach(vm.locations) { location in
                 listRowView(location: location)
+                    .padding(.vertical, 4)
+                    .listRowBackground(Color.clear)
             }
         }
+        .listStyle(PlainListStyle())
     }
 }
 
