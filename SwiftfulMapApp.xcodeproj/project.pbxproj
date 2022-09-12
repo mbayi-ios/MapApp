@@ -13,6 +13,7 @@
 		897A942028CF3954005866E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 897A941E28CF3954005866E1 /* Assets.xcassets */; };
 		897A942128CF3954005866E1 /* LocationsDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897A941F28CF3954005866E1 /* LocationsDataService.swift */; };
 		897A942628CF3AD1005866E1 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897A942528CF3AD1005866E1 /* Location.swift */; };
+		897A942928CF3D54005866E1 /* LocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897A942828CF3D54005866E1 /* LocationsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		897A941E28CF3954005866E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		897A941F28CF3954005866E1 /* LocationsDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsDataService.swift; sourceTree = "<group>"; };
 		897A942528CF3AD1005866E1 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		897A942828CF3D54005866E1 /* LocationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 		897A942328CF3AA4005866E1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				897A942828CF3D54005866E1 /* LocationsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 			files = (
 				897A941328CF38E2005866E1 /* ContentView.swift in Sources */,
 				897A941128CF38E2005866E1 /* SwiftfulMapAppApp.swift in Sources */,
+				897A942928CF3D54005866E1 /* LocationsView.swift in Sources */,
 				897A942628CF3AD1005866E1 /* Location.swift in Sources */,
 				897A942128CF3954005866E1 /* LocationsDataService.swift in Sources */,
 			);
