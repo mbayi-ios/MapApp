@@ -20,7 +20,7 @@ struct LocationsView: View {
             VStack(spacing: 0) {
 
                 header
-                .padding()
+                    .padding()
                 Spacer()
             }
         }
@@ -42,7 +42,16 @@ extension LocationsView {
                 .fontWeight(.black)
                 .foregroundColor(.primary)
                 .frame(height: 55)
-            .frame(maxWidth: .infinity)
+                .frame(maxWidth: .infinity)
+                .overlay(alignment: .leading) {
+                    Image(systemName: "arrow.down")
+                        .font(.headline)
+                        .foregroundColor(.primary)
+                        .padding()
+
+                }
+
+
         }
         .background(.thinMaterial)
         .cornerRadius(10)
